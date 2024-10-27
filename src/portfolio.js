@@ -427,7 +427,7 @@ const certifications = {
   ],
 };
 
-// Experience Page
+// Experience Page, to do!
 const experience = {
   title: "Experience",
   subtitle: "Work and Internships",
@@ -440,47 +440,25 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Machine Learning Engineer",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "June 2023 - Present",
-          location: "San Jose, CA, USA",
+          title: "Full Stack Developer (AWS)",
+          company: "Anthology",
+          company_url: "https://www.anthology.com/",
+          logo_path: "Anthology_2024.png",
+          duration: "October 2022 - Present",
+          location: "Remote",
           description:
-            "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
-          color: "#000000",
-        },
-        {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - Aug 2021",
-          location: "Hyderabad, Telangana",
-          description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
-          color: "#0879bf",
-        },
-        {
-          title: "Android and ML Developer",
-          company: "Muffito Incorporation",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
-          duration: "May 2018 - Oct 2018",
-          location: "Pune, Maharashtra",
-          description:
-            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
+            "At Anthology, I led the design and development of cloud-based solutions, including an AWS RDS data orchestration construct that enabled seamless data migration between instances using Glue and a WAF construct to help associate CloudFront distributions and regional resources (i.e. APIGWs, ALBs, etc.) to meet FedRAMP compliance. I also built and tested a CloudWatch Synthetic Canary construct with CDK to monitor critical services. My work involved deep expertise with AWS infrastructure, VPC peering, and PrivateLink, ensuring scalable and efficient backend solutions.",
           color: "#9b1578",
         },
         {
-          title: "Android Developer",
-          company: "FreeCopy Pvt. Ltd.",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
-          duration: "Nov 2017 - Dec 2017",
-          location: "Ahmedabad, Gujarat",
+          title: "Software Developer II",
+          company: "Lynden Inc.",
+          company_url: "https://www.lynden.com/",
+          logo_path: "lynden-logistics-logo.png",
+          duration: "July 2019 - September 2022",
+          location: "Remote",
           description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
+            "At Lynden, I played a pivotal role in maintaining and enhancing critical financial systems during a transitional period as senior developers retired. I served in a role similar to that of a Support Engineer, EDI Developer, and Backend Developer all in a single role. I quickly mastered complex in-house applications and EDI systems, providing essential bug fixes, incident handling, and system support. Additionally, I mentored new developers, sharing technical knowledge and guiding them through in-house processes to ensure smooth onboarding and collaboration.",
           color: "#fc1f20",
         },
       ],
@@ -496,7 +474,7 @@ const experience = {
           duration: "May 2017 - Aug 2017",
           location: "SeaTac, WA",
           description:
-            "",
+            "During my accounting internship at Lynden, I supported financial operations by streamlining processes and gaining hands-on experience with accounting systems, helping ensure smooth day-to-day operations. Gained experience working with AP, AR, and MIs.",
           color: "#000000",
         },
         {
@@ -507,7 +485,7 @@ const experience = {
           duration: "May 2016 - Aug 2016",
           location: "Issaquah, WA",
           description:
-            "",
+            "During my internship at Costco, I contributed to the SAP implementation project by designing and reviewing business application workflows, ensuring they adhered to technical standards and maintained high quality and precision.",
           color: "#ee3c26",
         },
       ],
