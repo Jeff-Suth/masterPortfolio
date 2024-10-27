@@ -90,19 +90,12 @@ const skills = {
         title: "Cloud Infra-Architecture",
         fileName: "CloudInfraImg",
         skills: [
-          "⚡ Experience working with multiple cloud platforms, mainly AWS",
+          "⚡ Experience working with multiple cloud platforms, primarily AWS",
           "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
           "⚡ Data Orchestration and Content Exchange constructs that safely move data between regions and can transform data as needed",
           "⚡ Created and implemented WAF construct for FedRAMP for use with CloudFront Distributions and regional resources like ALBs and APIGWs",
         ],
         softwareSkills: [
-          {
-            skillName: "GCP",
-            fontAwesomeClassname: "simple-icons:googlecloud",
-            style: {
-              color: "#4285F4",
-            },
-          },
           {
             skillName: "AWS",
             fontAwesomeClassname: "simple-icons:amazonaws",
@@ -118,10 +111,31 @@ const skills = {
             },
           },
           {
-            skillName: "Firebase",
-            fontAwesomeClassname: "simple-icons:firebase",
+            skillName: "S3",
+            fontAwesomeClassname: "logos:aws-s3",
             style: {
-              color: "#FFCA28",
+              backgroundColor: "transparent",
+            },
+          },
+          {
+            skillName: "Shield",
+            fontAwesomeClassname: "logos:aws-shield",
+            style: {
+              backgroundColor: "transparent",
+            },
+          },
+          {
+            skillName: "RDS",
+            fontAwesomeClassname: "logos:aws-rds",
+            style: {
+              backgroundColor: "transparent",
+            },
+          },
+          {
+            skillName: "Glue",
+            fontAwesomeClassname: "logos:aws-glue",
+            style: {
+              backgroundColor: "transparent",
             },
           },
           {
@@ -145,22 +159,22 @@ const skills = {
               color: "#1488C6",
             },
           },
-          {
-            skillName: "Kubernetes",
-            fontAwesomeClassname: "simple-icons:kubernetes",
-            style: {
-              color: "#326CE5",
-            },
-          },
+//          {
+//            skillName: "Kubernetes",
+//            fontAwesomeClassname: "simple-icons:kubernetes",
+//            style: {
+//              color: "#326CE5",
+//            },
+//          },
         ],
     },
     {
           title: "Full Stack Development",
           fileName: "FullStackImg",
           skills: [
-            "⚡ Building responsive website front end using React-Redux",
-            "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-            "⚡ Creating application backend in Node, Express & Flask",
+            "⚡ Designing and developing robust frontend interfaces using JavaScript and TypeScript frameworks",
+            "⚡ Orchestrating cloud-based backend solutions with AWS services, leveraging Lambda functions, RDS, and DynamoDB for scalable and efficient applications",
+            "⚡ Building and deploying infrastructure using CDK to automate and manage services like Glue, VPCs, and CloudWatch for data orchestration, monitoring, and migration",
           ],
           softwareSkills: [
             {
@@ -178,8 +192,8 @@ const skills = {
               },
             },
             {
-              skillName: "Sass",
-              fontAwesomeClassname: "simple-icons:sass",
+              skillName: "TypeScript",
+              fontAwesomeClassname: "logos:typescript-icon-round",
               style: {
                 color: "#CC6699",
               },
@@ -220,20 +234,13 @@ const skills = {
                 color: "#2C8EBB",
               },
             },
-    //        {
-    //          skillName: "Gatsby",
-    //          fontAwesomeClassname: "simple-icons:gatsby",
-    //          style: {
-    //            color: "#663399",
-    //          },
-    //        },
-    //        {
-    //          skillName: "Flutter",
-    //          fontAwesomeClassname: "simple-icons:flutter",
-    //          style: {
-    //            color: "#02569B",
-    //          },
-    //        },
+            {
+              skillName: "Github",
+              fontAwesomeClassname: "ion:logo-github",
+              style: {
+                color: "black",
+              },
+            },
           ],
     },
     {
@@ -245,28 +252,13 @@ const skills = {
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
-//        {
-//          skillName: "Tensorflow",
-//          fontAwesomeClassname: "logos-tensorflow",
-//          style: {
-//            backgroundColor: "transparent",
-//          },
-//        },
-//        {
-//          skillName: "Keras",
-//          fontAwesomeClassname: "simple-icons:keras",
-//          style: {
-//            backgroundColor: "white",
-//            color: "#D00000",
-//          },
-//        },
-//        {
-//          skillName: "PyTorch",
-//          fontAwesomeClassname: "logos-pytorch",
-//          style: {
-//            backgroundColor: "transparent",
-//          },
-//        },
+        {
+          skillName: "AWS Bedrock",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+              color: "#FF9900",
+            },
+        },
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
@@ -278,6 +270,22 @@ const skills = {
         {
           skillName: "Deeplearning",
           imageSrc: "deeplearning_ai_logo.png",
+        },
+        {
+          skillName: "ChatGPT",
+          fontAwesomeClassname: "arcticons:openai-chatgpt",
+          style: {
+            backgroundColor: "transparent",
+            color: "#D00000",
+          },
+        },
+        {
+          skillName: "Claude",
+          fontAwesomeClassname: "logos:claude",
+          style: {
+            backgroundColor: "transparent",
+            color: "#D97757",
+          },
         },
       ],
     },
@@ -399,21 +407,21 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "stanford_logo.png",
+      title: "AWS Cloud Developer Associate",
+      subtitle: "- AWS Certification",
+      logo_path: "aws-icon.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
-      alt_name: "Stanford University",
+        "https://www.credly.com/badges/34c9c999-3c25-4775-a899-1221d58469e8",
+      alt_name: "AWS Certification",
       color_code: "#8C151599",
     },
     {
-      title: "Deep Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "deeplearning_ai_logo.png",
+      title: "CompTIA A+",
+      subtitle: "- CompTIA",
+      logo_path: "comptia.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
-      alt_name: "deeplearning.ai",
+        "https://www.linkedin.com/in/jeffrey-sutherland/overlay/1635464197410/single-media-viewer/?type=DOCUMENT&profileId=ACoAACGCkgUBbIBGWSinyWr6A_xzeuwsO_TvsJ4",
+      alt_name: "CompTIA A+",
       color_code: "#00000099",
     },
   ],
@@ -481,99 +489,26 @@ const experience = {
       title: "Internships",
       experiences: [
         {
-          title: "Machine Learning Intern",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "May 2022 - Aug 2022",
-          location: "San Francisco, USA",
+          title: "Accounting Intern",
+          company: "Lynden Inc.",
+          company_url: "https://www.lynden.com/",
+          logo_path: "lynden-logistics-logo.png",
+          duration: "May 2017 - Aug 2017",
+          location: "SeaTac, WA",
           description:
-            "Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
+            "",
           color: "#000000",
         },
         {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
+          title: "Financial Research Software Development Intern",
+          company: "Costco Wholesale",
+          company_url: "https://www.costco.com/",
+          logo_path: "Costco-Logo.wine.png",
+          duration: "May 2016 - Aug 2016",
+          location: "Issaquah, WA",
           description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
+            "",
           color: "#ee3c26",
-        },
-        {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
-          company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
-          description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
-          color: "#0071C5",
-        },
-      ],
-    },
-    {
-      title: "Volunteerships",
-      experiences: [
-        {
-          title: "Google Explore ML Facilitator",
-          company: "Google",
-          company_url: "https://about.google/",
-          logo_path: "google_logo.png",
-          duration: "June 2019 - April 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
-          color: "#4285F4",
-        },
-        {
-          title: "Microsoft Student Partner",
-          company: "Microsoft",
-          company_url: "https://www.microsoft.com/",
-          logo_path: "microsoft_logo.png",
-          duration: "Aug 2019 - May 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
-          color: "#D83B01",
-        },
-        {
-          title: "Mozilla Campus Captain",
-          company: "Mozilla",
-          company_url: "https://www.mozilla.org/",
-          logo_path: "mozilla_logo.png",
-          duration: "Oct 2019 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
-          color: "#000000",
-        },
-        {
-          title: "Developer Students Club Member",
-          company: "DSC IIITDM Kurnool",
-          company_url:
-            "https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
-          logo_path: "dsc_logo.png",
-          duration: "Jan 2018 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
-          color: "#0C9D58",
-        },
-        {
-          title: "Developer Program Member",
-          company: "Github",
-          company_url: "https://github.com/",
-          logo_path: "github_logo.png",
-          duration: "July 2019 - PRESENT",
-          location: "Work From Home",
-          description:
-            "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
-          color: "#181717",
         },
       ],
     },
@@ -584,39 +519,39 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "Only have a few projects outside of work on my Github, but most of them are little games I make on the side for fun!",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "Publications",
-  description: "Some of my published Articles, Blogs and Research.",
+  description: "No publications to share at the moment but will update in the future when relevant!",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
-    {
-      id: "neuro-symbolic-sudoku-solver",
-      name: "Neuro-Symbolic Sudoku Solver",
-      createdAt: "2023-07-02T00:00:00Z",
-      description: "Paper published in KDD KiML 2023",
-      url: "https://arxiv.org/abs/2307.00653",
-    },
-    {
-      id: "mdp-diffusion",
-      name: "MDP-Diffusion",
-      createdAt: "2023-09-19T00:00:00Z",
-      description: "Blog published in Paperspace",
-      url: "https://blog.paperspace.com/mdp-diffusion/",
-    },
-    {
-      id: "consistency-models",
-      name: "Consistency Models",
-      createdAt: "2023-10-12T00:00:00Z",
-      description: "Blog published in Paperspace",
-      url: "https://blog.paperspace.com/consistency-models/",
-    },
+//    {
+//      id: "neuro-symbolic-sudoku-solver",
+//      name: "Neuro-Symbolic Sudoku Solver",
+//      createdAt: "2023-07-02T00:00:00Z",
+//      description: "Paper published in KDD KiML 2023",
+//      url: "https://arxiv.org/abs/2307.00653",
+//    },
+//    {
+//      id: "mdp-diffusion",
+//      name: "MDP-Diffusion",
+//      createdAt: "2023-09-19T00:00:00Z",
+//      description: "Blog published in Paperspace",
+//      url: "https://blog.paperspace.com/mdp-diffusion/",
+//    },
+//    {
+//      id: "consistency-models",
+//      name: "Consistency Models",
+//      createdAt: "2023-10-12T00:00:00Z",
+//      description: "Blog published in Paperspace",
+//      url: "https://blog.paperspace.com/consistency-models/",
+//    },
   ],
 };
 
@@ -637,14 +572,14 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "18118 SE 16th St, Vancouver, WA 98683",
+    subtitle: "Vancouver, WA 98683",
     locality: "Vancouver",
     country: "USA",
     region: "Washington",
     postalCode: "98683",
-    streetAddress: "18118 SE 16th St",
+    streetAddress: "Redacted",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/hpM9Rj9Ut27dx9u39",
+    location_map_link: "https://maps.app.goo.gl/bwdFXnnPvAYWN2uY6",
   },
   phoneSection: {
     title: "",
