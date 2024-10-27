@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
@@ -87,11 +87,161 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
+        title: "Cloud Infra-Architecture",
+        fileName: "CloudInfraImg",
+        skills: [
+          "⚡ Experience working with multiple cloud platforms, mainly AWS",
+          "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
+          "⚡ Data Orchestration and Content Exchange constructs that safely move data between regions and can transform data as needed",
+          "⚡ Created and implemented WAF construct for FedRAMP for use with CloudFront Distributions and regional resources like ALBs and APIGWs",
+        ],
+        softwareSkills: [
+          {
+            skillName: "GCP",
+            fontAwesomeClassname: "simple-icons:googlecloud",
+            style: {
+              color: "#4285F4",
+            },
+          },
+          {
+            skillName: "AWS",
+            fontAwesomeClassname: "simple-icons:amazonaws",
+            style: {
+              color: "#FF9900",
+            },
+          },
+          {
+            skillName: "Azure",
+            fontAwesomeClassname: "simple-icons:microsoftazure",
+            style: {
+              color: "#0089D6",
+            },
+          },
+          {
+            skillName: "Firebase",
+            fontAwesomeClassname: "simple-icons:firebase",
+            style: {
+              color: "#FFCA28",
+            },
+          },
+          {
+            skillName: "PostgreSQL",
+            fontAwesomeClassname: "simple-icons:postgresql",
+            style: {
+              color: "#336791",
+            },
+          },
+          {
+            skillName: "MongoDB",
+            fontAwesomeClassname: "simple-icons:mongodb",
+            style: {
+              color: "#47A248",
+            },
+          },
+          {
+            skillName: "Docker",
+            fontAwesomeClassname: "simple-icons:docker",
+            style: {
+              color: "#1488C6",
+            },
+          },
+          {
+            skillName: "Kubernetes",
+            fontAwesomeClassname: "simple-icons:kubernetes",
+            style: {
+              color: "#326CE5",
+            },
+          },
+        ],
+    },
+    {
+          title: "Full Stack Development",
+          fileName: "FullStackImg",
+          skills: [
+            "⚡ Building responsive website front end using React-Redux",
+            "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
+            "⚡ Creating application backend in Node, Express & Flask",
+          ],
+          softwareSkills: [
+            {
+              skillName: "HTML5",
+              fontAwesomeClassname: "simple-icons:html5",
+              style: {
+                color: "#E34F26",
+              },
+            },
+            {
+              skillName: "CSS3",
+              fontAwesomeClassname: "fa-css3",
+              style: {
+                color: "#1572B6",
+              },
+            },
+            {
+              skillName: "Sass",
+              fontAwesomeClassname: "simple-icons:sass",
+              style: {
+                color: "#CC6699",
+              },
+            },
+            {
+              skillName: "JavaScript",
+              fontAwesomeClassname: "simple-icons:javascript",
+              style: {
+                backgroundColor: "#000000",
+                color: "#F7DF1E",
+              },
+            },
+            {
+              skillName: "ReactJS",
+              fontAwesomeClassname: "simple-icons:react",
+              style: {
+                color: "#61DAFB",
+              },
+            },
+            {
+              skillName: "NodeJS",
+              fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
+              style: {
+                color: "#339933",
+              },
+            },
+            {
+              skillName: "NPM",
+              fontAwesomeClassname: "simple-icons:npm",
+              style: {
+                color: "#CB3837",
+              },
+            },
+            {
+              skillName: "Yarn",
+              fontAwesomeClassname: "simple-icons:yarn",
+              style: {
+                color: "#2C8EBB",
+              },
+            },
+    //        {
+    //          skillName: "Gatsby",
+    //          fontAwesomeClassname: "simple-icons:gatsby",
+    //          style: {
+    //            color: "#663399",
+    //          },
+    //        },
+    //        {
+    //          skillName: "Flutter",
+    //          fontAwesomeClassname: "simple-icons:flutter",
+    //          style: {
+    //            color: "#02569B",
+    //          },
+    //        },
+          ],
+    },
+    {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
       skills: [
         "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
+        "⚡ Experience working on generative AI detection tools to minimize students' cheating on assignments",
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
@@ -128,156 +278,6 @@ const skills = {
         {
           skillName: "Deeplearning",
           imageSrc: "deeplearning_ai_logo.png",
-        },
-      ],
-    },
-    {
-      title: "Full Stack Development",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-//        {
-//          skillName: "Gatsby",
-//          fontAwesomeClassname: "simple-icons:gatsby",
-//          style: {
-//            color: "#663399",
-//          },
-//        },
-//        {
-//          skillName: "Flutter",
-//          fontAwesomeClassname: "simple-icons:flutter",
-//          style: {
-//            color: "#02569B",
-//          },
-        },
-      ],
-    },
-    {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Experience working with multiple cloud platforms, mainly AWS",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ ",
-        "⚡ ",
-      ],
-      softwareSkills: [
-        {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Kubernetes",
-          fontAwesomeClassname: "simple-icons:kubernetes",
-          style: {
-            color: "#326CE5",
-          },
         },
       ],
     },
@@ -324,16 +324,16 @@ const skills = {
 };
 
 // Education Page
-//const competitiveSites = {
-//  competitiveSites: [
-//    {
-//      siteName: "LeetCode",
-//      iconifyClassname: "simple-icons:leetcode",
-//      style: {
-//        color: "#F79F1B",
-//      },
-//      profileLink: "https://leetcode.com/_/",
-//    },
+const competitiveSites = {
+  competitiveSites: [
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: {
+        color: "#F79F1B",
+      },
+      profileLink: "https://leetcode.com/u/Jeff_Suth/",
+    },
 //    {
 //      siteName: "HackerRank",
 //      iconifyClassname: "simple-icons:hackerrank",
@@ -348,7 +348,7 @@ const skills = {
 //      style: {
 //        color: "#5B4638",
 //      },
-//      profileLink: "https://www.codechef.com/users/ashutosh_1919",
+//      profileLink: "https://www.codechef.com/users/",
 //    },
 //    {
 //      siteName: "Codeforces",
@@ -364,7 +364,7 @@ const skills = {
 //      style: {
 //        color: "#323754",
 //      },
-//      profileLink: "https://www.hackerearth.com/@ashutosh391",
+//      profileLink: "https://www.hackerearth.com/",
 //    },
 //    {
 //      siteName: "Kaggle",
@@ -374,8 +374,8 @@ const skills = {
 //      },
 //      profileLink: "https://www.kaggle.com/",
 //    },
-//  ],
-//};
+  ],
+};
 
 const degrees = {
   degrees: [
@@ -628,13 +628,13 @@ const contactPageData = {
     description:
       "I am available on any of my listed social media. You can message me, I will reply within 24 hours. I can help you with AWS, Infrastructure as Code, ML, AI, Data Science, and anything else you might need!",
   },
-//  blogSection: {
-//    title: "Blogs",
-//    subtitle:
-//      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-//    link: "https://blogs.j.com/",
-//    avatar_image_path: "blogs_image.svg",
-//  },
+  blogSection: {
+    title: "Blogs",
+    subtitle:
+      "I currently don't have a blog or anything of that sort but if I end up adding one I'll put it here!",
+    link: "",
+    avatar_image_path: "blogs_image.svg",
+  },
   addressSection: {
     title: "Address",
     subtitle: "18118 SE 16th St, Vancouver, WA 98683",
@@ -644,7 +644,7 @@ const contactPageData = {
     postalCode: "98683",
     streetAddress: "18118 SE 16th St",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
+    location_map_link: "https://maps.app.goo.gl/hpM9Rj9Ut27dx9u39",
   },
   phoneSection: {
     title: "",
