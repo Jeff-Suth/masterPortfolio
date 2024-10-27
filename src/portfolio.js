@@ -7,81 +7,81 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Jeffrey Sutherland's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A driven and resourceful Full Stack Developer who thrives on crafting end-to-end solutions, leveraging Infrastructure as Code to design sustainable, scalable systems, with a passion for building seamless data orchestration, monitoring tools, and empowering collaborative development environments.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Jeffrey Sutherland Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "http://jeffreysutherland.click/",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Jeffrey Sutherland",
+  logo_name: "JeffreySutherland",
+  nickname: "Jeff-Suth",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A driven and resourceful Full Stack Developer who thrives on crafting end-to-end solutions, leveraging Infrastructure as Code to design sustainable, scalable systems, with a passion for building seamless data orchestration, monitoring tools, and empowering collaborative development environments.",
   resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+    "https://docs.google.com/document/d/13lGmWEbAw7iFV8A-LBO8oqzoUyZcpGVt/edit?usp=sharing&ouid=105495318508224372032&rtpof=true&sd=true",
+  portfolio_repository: "https://github.com/Jeff-Suth/masterPortfolio",
+  githubProfile: "https://github.com/Jeff-Suth",
 };
 
 const socialMediaLinks = [
   /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
+  // github: "https://github.com/Jeff-Suth",
+  // linkedin: "https://www.linkedin.com/in/jeffrey-sutherland/",
+  // gmail: "jeff.a.suth@gmail.com",
+  // gitlab: "",
+  // facebook: "",
+  // twitter: "",
+  // instagram: ""
 
   {
     name: "Github",
-    link: "https://github.com/ashutosh1919",
+    link: "https://github.com/Jeff-Suth",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ashutosh1919/",
+    link: "https://www.linkedin.com/in/jeffrey-sutherland/",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
-  {
-    name: "YouTube",
-    link: "https://youtube.com/c/DevSense19",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-  },
+//  {
+//    name: "YouTube",
+//    link: "",
+//    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+//    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+//  },
   {
     name: "Gmail",
-    link: "mailto:ashutoshhathidara98@gmail.com",
+    link: "mailto:jeff.a.suth@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
-  {
-    name: "X-Twitter",
-    link: "https://twitter.com/ashutosh_1919",
-    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
-  },
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/laymanbrother.19/",
-    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-  },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/layman_brother/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-  },
+//  {
+//    name: "X-Twitter",
+//    link: "",
+//    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
+//    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
+//  },
+//  {
+//    name: "Facebook",
+//    link: "",
+//    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+//    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+//  },
+//  {
+//    name: "Instagram",
+//    link: "",
+//    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
+//    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+//  },
 ];
 
 const skills = {
@@ -95,28 +95,28 @@ const skills = {
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
+//        {
+//          skillName: "Tensorflow",
+//          fontAwesomeClassname: "logos-tensorflow",
+//          style: {
+//            backgroundColor: "transparent",
+//          },
+//        },
+//        {
+//          skillName: "Keras",
+//          fontAwesomeClassname: "simple-icons:keras",
+//          style: {
+//            backgroundColor: "white",
+//            color: "#D00000",
+//          },
+//        },
+//        {
+//          skillName: "PyTorch",
+//          fontAwesomeClassname: "logos-pytorch",
+//          style: {
+//            backgroundColor: "transparent",
+//          },
+//        },
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
@@ -197,19 +197,19 @@ const skills = {
             color: "#2C8EBB",
           },
         },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
-          },
+//        {
+//          skillName: "Gatsby",
+//          fontAwesomeClassname: "simple-icons:gatsby",
+//          style: {
+//            color: "#663399",
+//          },
+//        },
+//        {
+//          skillName: "Flutter",
+//          fontAwesomeClassname: "simple-icons:flutter",
+//          style: {
+//            color: "#02569B",
+//          },
         },
       ],
     },
@@ -217,10 +217,10 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
+        "⚡ Experience working with multiple cloud platforms, mainly AWS",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ ",
+        "⚡ ",
       ],
       softwareSkills: [
         {
@@ -286,7 +286,7 @@ const skills = {
       fileName: "DesignImg",
       skills: [
         "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
+        "⚡ Customizing logo designs and building logos from scratch and generative AI tools",
         "⚡ Creating the flow of application functionalities to optimize user experience",
       ],
       softwareSkills: [
@@ -324,86 +324,74 @@ const skills = {
 };
 
 // Education Page
-const competitiveSites = {
-  competitiveSites: [
-    {
-      siteName: "LeetCode",
-      iconifyClassname: "simple-icons:leetcode",
-      style: {
-        color: "#F79F1B",
-      },
-      profileLink: "https://leetcode.com/layman_brother/",
-    },
-    {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866",
-      },
-      profileLink: "https://www.hackerrank.com/layman_brother",
-    },
-    {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: {
-        color: "#5B4638",
-      },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
-      profileLink: "http://codeforces.com/profile/layman_brother",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
-    },
-  ],
-};
+//const competitiveSites = {
+//  competitiveSites: [
+//    {
+//      siteName: "LeetCode",
+//      iconifyClassname: "simple-icons:leetcode",
+//      style: {
+//        color: "#F79F1B",
+//      },
+//      profileLink: "https://leetcode.com/_/",
+//    },
+//    {
+//      siteName: "HackerRank",
+//      iconifyClassname: "simple-icons:hackerrank",
+//      style: {
+//        color: "#2EC866",
+//      },
+//      profileLink: "https://www.hackerrank.com/_",
+//    },
+//    {
+//      siteName: "Codechef",
+//      iconifyClassname: "simple-icons:codechef",
+//      style: {
+//        color: "#5B4638",
+//      },
+//      profileLink: "https://www.codechef.com/users/ashutosh_1919",
+//    },
+//    {
+//      siteName: "Codeforces",
+//      iconifyClassname: "simple-icons:codeforces",
+//      style: {
+//        color: "#1F8ACB",
+//      },
+//      profileLink: "http://codeforces.com/profile/_",
+//    },
+//    {
+//      siteName: "Hackerearth",
+//      iconifyClassname: "simple-icons:hackerearth",
+//      style: {
+//        color: "#323754",
+//      },
+//      profileLink: "https://www.hackerearth.com/@ashutosh391",
+//    },
+//    {
+//      siteName: "Kaggle",
+//      iconifyClassname: "simple-icons:kaggle",
+//      style: {
+//        color: "#20BEFF",
+//      },
+//      profileLink: "https://www.kaggle.com/",
+//    },
+//  ],
+//};
 
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      title: "Willamette University",
+      subtitle: "BA Computer Science",
+      logo_path: "Willamette_Bearcats_logo.png",
+      alt_name: "Willamette University",
+      duration: "2015 - 2019",
       descriptions: [
         "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing,  and Full Stack Development.",
+        "⚡ Outside of Computer Science, I played basketball for the collegiate team all four years and got a minor in Religious Studies",
+        "⚡ In my last two years I founded and competed in the Esports Club playing League of Legends, Hearthstone, and Overwatch against some of the largest schools in the NCAA.",
       ],
-      website_link: "http://iiitk.ac.in",
-    },
-    {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
-      descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
-      ],
-      website_link: "https://www.indiana.edu/",
+      website_link: "https://willamette.edu/",
     },
   ],
 };
@@ -428,105 +416,15 @@ const certifications = {
       alt_name: "deeplearning.ai",
       color_code: "#00000099",
     },
-    {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "Data Science",
-      subtitle: "- Alex Aklson",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Big Data",
-      subtitle: "- Kim Akers",
-      logo_path: "microsoft_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
-      alt_name: "Microsoft",
-      color_code: "#D83B0199",
-    },
-    {
-      title: "Advanced Data Science",
-      subtitle: "- Romeo Kienzler",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Advanced ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
-    },
-    {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
-    {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-    {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link:
-        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
-    },
-    {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
   ],
 };
 
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work and Internships",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I have contributed to dynamic organizations as a Full Stack Developer, focusing on Infrastructure as Code, cloud solutions, and software development. My experience spans creating data orchestration constructs and monitoring systems using AWS tools like CDK, Glue, and CloudWatch for large companies. I’ve also supported complex financial and EDI systems at smaller companies, mentoring developers and troubleshooting critical incidents. Beyond coding, I enjoy fostering collaboration, continuously refining processes, and sharing knowledge to empower teams and projects.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -726,25 +624,25 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "headshot.jpg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "I am available on any of my listed social media. You can message me, I will reply within 24 hours. I can help you with AWS, Infrastructure as Code, ML, AI, Data Science, and anything else you might need!",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-    link: "https://blogs.ashutoshhathidara.com/",
-    avatar_image_path: "blogs_image.svg",
-  },
+//  blogSection: {
+//    title: "Blogs",
+//    subtitle:
+//      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
+//    link: "https://blogs.j.com/",
+//    avatar_image_path: "blogs_image.svg",
+//  },
   addressSection: {
     title: "Address",
-    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
-    locality: "San Jose",
+    subtitle: "18118 SE 16th St, Vancouver, WA 98683",
+    locality: "Vancouver",
     country: "USA",
-    region: "California",
-    postalCode: "95129",
-    streetAddress: "Saratoga Avenue",
+    region: "Washington",
+    postalCode: "98683",
+    streetAddress: "18118 SE 16th St",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
   },
