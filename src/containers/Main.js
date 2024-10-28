@@ -58,8 +58,7 @@ export default class Main extends Component {
           <Route
             path="/whack"
             render={() => {
-              window.location.href =
-                "http://aerygamestudios.link.s3-website-us-west-2.amazonaws.com/";
+              window.location.href = "http://aerygamestudios.link/";
               return null;
             }}
           />
