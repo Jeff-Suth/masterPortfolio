@@ -241,7 +241,7 @@ function revealWord(guess) {
 
 function updateKeyClass(key, className) {
   const keyElement = document.getElementById(`key-${key.toUpperCase()}`);
-  if (keyElement && !keyElement.classList.contains('right')) { 
+  if (keyElement && !keyElement.classList.contains('right')) {
     // Only update if it's not already marked correct
     keyElement.classList.remove('empty', 'wrong', 'right');
     keyElement.classList.add(className);
