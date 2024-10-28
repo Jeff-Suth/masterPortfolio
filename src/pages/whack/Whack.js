@@ -1,5 +1,4 @@
-// Whack.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { user } from './user';
 import { wordList } from './dictionary';
 
@@ -16,36 +15,7 @@ const state = {
 let currentUser;
 
 const Whack = () => {
-  useEffect(() => {
-    startup();
-  }, []); // Run on component mount
-
-  function startup() {
-    let username = localStorage.getItem('lastUsername');
-    if (!username) {
-      username = prompt("Enter your username:");
-      if (username) {
-        localStorage.setItem('lastUsername', username);
-      } else {
-        alert('Username is required to play the game.');
-        return;
-      }
-    }
-
-    currentUser = new user(username);
-    const game = document.getElementById('game');
-    drawGrid(game);
-
-    const keyboardContainer = document.getElementById('keyboard-container');
-    drawKeyboard(keyboardContainer);
-
-    registerKeyboardEvents();
-    displayStats();
-
-    setupStatsMenu();
-  }
-
-  function drawGrid(container) {
+  const drawGrid = useCallback((container) => {
     const grid = document.createElement('div');
     grid.className = 'grid';
 
@@ -55,17 +25,9 @@ const Whack = () => {
       }
     }
     container.appendChild(grid);
-  }
+  }, []);
 
-  function drawBox(container, row, col, letter = '') {
-    const box = document.createElement('div');
-    box.className = 'box';
-    box.textContent = letter;
-    box.id = `box${row}${col}`;
-    container.appendChild(box);
-  }
-
-  function drawKeyboard(container) {
+  const drawKeyboard = useCallback((container) => {
     const keyboardLayout = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
     const keyboard = document.createElement('div');
     keyboard.className = 'keyboard';
@@ -74,21 +36,56 @@ const Whack = () => {
       const rowDiv = document.createElement('div');
       rowDiv.className = 'keyboard-row';
 
-      if (rowIndex === 2) {
-        rowDiv.appendChild(createSpecialKey('Enter'));
-      }
+      if (rowIndex === 2) rowDiv.appendChild(createSpecialKey('Enter'));
 
-      row.split('').forEach((key) => {
-        rowDiv.appendChild(createKeyButton(key));
-      });
+      row.split('').forEach((key) => rowDiv.appendChild(createKeyButton(key)));
 
-      if (rowIndex === 2) {
-        rowDiv.appendChild(createSpecialKey('Backspace', '<-'));
-      }
+      if (rowIndex === 2) rowDiv.appendChild(createSpecialKey('Backspace', '<-'));
+
       keyboard.appendChild(rowDiv);
     });
 
     container.appendChild(keyboard);
+  }, []);
+
+  const registerKeyboardEvents = useCallback(() => {
+    document.body.onkeydown = (e) => handleKeyClick(e.key);
+  }, []);
+
+  useEffect(() => {
+    const startup = () => {
+      let username = localStorage.getItem('lastUsername');
+      if (!username) {
+        username = prompt('Enter your username:');
+        if (username) {
+          localStorage.setItem('lastUsername', username);
+        } else {
+          alert('Username is required to play the game.');
+          return;
+        }
+      }
+
+      currentUser = new user(username);
+      const game = document.getElementById('game');
+      drawGrid(game);
+
+      const keyboardContainer = document.getElementById('keyboard-container');
+      drawKeyboard(keyboardContainer);
+
+      registerKeyboardEvents();
+      displayStats();
+      setupStatsMenu();
+    };
+
+    startup();
+  }, [drawGrid, drawKeyboard, registerKeyboardEvents]);
+
+  function drawBox(container, row, col, letter = '') {
+    const box = document.createElement('div');
+    box.className = 'box';
+    box.textContent = letter;
+    box.id = `box${row}${col}`;
+    container.appendChild(box);
   }
 
   function createKeyButton(key) {
@@ -108,18 +105,11 @@ const Whack = () => {
   }
 
   function handleKeyClick(key) {
-    if (key === 'Enter') {
-      submitWord();
-    } else if (key === 'Backspace') {
-      removeLetter();
-    } else if (isLetter(key)) {
-      addLetter(key);
-    }
-    updateGrid();
-  }
+    if (key === 'Enter') submitWord();
+    else if (key === 'Backspace') removeLetter();
+    else if (isLetter(key)) addLetter(key);
 
-  function registerKeyboardEvents() {
-    document.body.onkeydown = (e) => handleKeyClick(e.key);
+    updateGrid();
   }
 
   function submitWord() {
@@ -132,12 +122,8 @@ const Whack = () => {
           revealWord(word);
           state.currentRow++;
           state.currentCol = 0;
-        } else {
-          alert('You have already guessed this word.');
-        }
-      } else {
-        alert('Not a valid word.');
-      }
+        } else alert('You have already guessed this word.');
+      } else alert('Not a valid word.');
     }
   }
 
@@ -205,11 +191,8 @@ const Whack = () => {
     const isGameOver = state.currentRow === 5;
 
     setTimeout(() => {
-      if (isWinner) {
-        alert('Congratulations!');
-      } else if (isGameOver) {
-        alert(`Game Over! The word was ${state.secret}.`);
-      }
+      if (isWinner) alert('Congratulations!');
+      else if (isGameOver) alert(`Game Over! The word was ${state.secret}.`);
       displayStats();
     }, 500);
   }
