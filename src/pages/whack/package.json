@@ -1,0 +1,12 @@
+{
+  "name": "wordle-speedrun",
+  "version": "1.0.0",
+  "description": "Wordle clone in plain Javascript (speedrun)",
+  "license": "ISC",
+  "author": "DoubleDebug",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
