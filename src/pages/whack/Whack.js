@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { user } from "./user";
 import { wordList } from "./dictionary";
+import ReactDOM from "react-dom";
 
+// Initialize the dictionary and game state
 const dictionary = wordList;
 const initialState = {
   secret: dictionary[Math.floor(Math.random() * dictionary.length)],
@@ -10,11 +12,38 @@ const initialState = {
     .map(() => Array(5).fill("")),
   currentRow: 0,
   currentCol: 0,
-  guessedWords: [], // Array to store guessed words
+  guessedWords: [],
 };
 
 let currentUser;
 
+// Handle client-side routing based on the URL path
+window.addEventListener("popstate", handleLocation);
+
+function handleLocation() {
+  const path = window.location.pathname;
+  if (path === "/whack") {
+    ReactDOM.render(<Whack />, document.getElementById("root"));
+  } else {
+    loadHomePage();
+  }
+}
+
+// Default homepage content
+function loadHomePage() {
+  document.getElementById("root").innerHTML = `
+    <h1>Welcome to the Homepage</h1>
+    <p>Click <a href="/whack" id="whack-link">here</a> to play Whack!</p>
+  `;
+
+  document.getElementById("whack-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    history.pushState({}, "", "/whack");
+    handleLocation();
+  });
+}
+
+// Main Whack game component
 function Whack() {
   const [state, setState] = useState(initialState);
 
@@ -78,7 +107,6 @@ function Whack() {
     box.className = "box";
     box.textContent = letter;
     box.id = `box${row}${col}`;
-
     container.appendChild(box);
     return box;
   }
@@ -145,7 +173,6 @@ function Whack() {
     } else if (isLetter(key)) {
       addLetter(key);
     }
-
     updateGrid();
   }
 
@@ -285,4 +312,5 @@ function Whack() {
   );
 }
 
-export default Whack;
+// Initialize the router on page load
+handleLocation();
