@@ -15,6 +15,37 @@ const state = {
 let currentUser;
 
 const Whack = () => {
+  const handleKeyClick = useCallback((key) => {
+    if (key === 'Enter') submitWord();
+    else if (key === 'Backspace') removeLetter();
+    else if (isLetter(key)) addLetter(key);
+
+    updateGrid();
+  }, []);
+
+  const createKeyButton = useCallback(
+    (key) => {
+      const keyButton = document.createElement('button');
+      keyButton.className = 'key';
+      keyButton.textContent = key;
+      keyButton.onclick = () => handleKeyClick(key);
+      keyButton.id = `key-${key.toUpperCase()}`;
+      return keyButton;
+    },
+    [handleKeyClick]
+  );
+
+  const createSpecialKey = useCallback(
+    (key, label = key) => {
+      const keyButton = document.createElement('button');
+      keyButton.className = 'key special-key';
+      keyButton.textContent = label;
+      keyButton.onclick = () => handleKeyClick(key);
+      return keyButton;
+    },
+    [handleKeyClick]
+  );
+
   const drawGrid = useCallback((container) => {
     const grid = document.createElement('div');
     grid.className = 'grid';
@@ -27,30 +58,35 @@ const Whack = () => {
     container.appendChild(grid);
   }, []);
 
-  const drawKeyboard = useCallback((container) => {
-    const keyboardLayout = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
-    const keyboard = document.createElement('div');
-    keyboard.className = 'keyboard';
+  const drawKeyboard = useCallback(
+    (container) => {
+      const keyboardLayout = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
+      const keyboard = document.createElement('div');
+      keyboard.className = 'keyboard';
 
-    keyboardLayout.forEach((row, rowIndex) => {
-      const rowDiv = document.createElement('div');
-      rowDiv.className = 'keyboard-row';
+      keyboardLayout.forEach((row, rowIndex) => {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'keyboard-row';
 
-      if (rowIndex === 2) rowDiv.appendChild(createSpecialKey('Enter'));
+        if (rowIndex === 2) rowDiv.appendChild(createSpecialKey('Enter'));
 
-      row.split('').forEach((key) => rowDiv.appendChild(createKeyButton(key)));
+        row.split('').forEach((key) =>
+          rowDiv.appendChild(createKeyButton(key))
+        );
 
-      if (rowIndex === 2) rowDiv.appendChild(createSpecialKey('Backspace', '<-'));
+        if (rowIndex === 2) rowDiv.appendChild(createSpecialKey('Backspace', '<-'));
 
-      keyboard.appendChild(rowDiv);
-    });
+        keyboard.appendChild(rowDiv);
+      });
 
-    container.appendChild(keyboard);
-  }, []);
+      container.appendChild(keyboard);
+    },
+    [createKeyButton, createSpecialKey]
+  );
 
   const registerKeyboardEvents = useCallback(() => {
     document.body.onkeydown = (e) => handleKeyClick(e.key);
-  }, []);
+  }, [handleKeyClick]);
 
   useEffect(() => {
     const startup = () => {
@@ -86,30 +122,6 @@ const Whack = () => {
     box.textContent = letter;
     box.id = `box${row}${col}`;
     container.appendChild(box);
-  }
-
-  function createKeyButton(key) {
-    const keyButton = document.createElement('button');
-    keyButton.className = 'key';
-    keyButton.textContent = key;
-    keyButton.onclick = () => handleKeyClick(key);
-    return keyButton;
-  }
-
-  function createSpecialKey(key, label = key) {
-    const keyButton = document.createElement('button');
-    keyButton.className = 'key special-key';
-    keyButton.textContent = label;
-    keyButton.onclick = () => handleKeyClick(key);
-    return keyButton;
-  }
-
-  function handleKeyClick(key) {
-    if (key === 'Enter') submitWord();
-    else if (key === 'Backspace') removeLetter();
-    else if (isLetter(key)) addLetter(key);
-
-    updateGrid();
   }
 
   function submitWord() {
