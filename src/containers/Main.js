@@ -54,6 +54,15 @@ export default class Main extends Component {
             render={(props) => <Contact {...props} theme={this.props.theme} />}
           />
 
+          {/* Use window.location.href to navigate to the external site */}
+          <Route
+            path="/whack"
+            render={() => {
+              window.location.href = "http://aerygamestudios.link/";
+              return null;
+            }}
+          />
+
           {settings.isSplash && (
             <Route
               path="/splash"
